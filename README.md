@@ -1,1 +1,7 @@
-# heat-pumps-blocking-window-parameter-search
+# Simulation model for aggregated heat pump loads and blocking windows
+
+Our simulation model enables researchers to analyze the effect of establishing heat pump blocking periods on peak aggreagted heat pump loads. We allow for random testing of combinations of blocking parameters, such as the share of blocked households and the maximum allowed power per heat pump during peaks. The analysis (in evaluation.ipynb) can be run with arbitrarily chosen number of randomly sampled households, weeks of the investigation as well as repeat cycles. We enable the selection of multiple repeat cycles and weeks for the analysis, to ensure robust a robust parameter evaluation process. For instance, each randomly chosen combination of blocking parameters is tested in the amount of selected repeat cycles. For every repat cycle, a new agglomeration of heat pump household loads is randomly sampled. Then, for every investigated week the respective repeat cycles are conducted. For every run, the achieved peak reduction is tracked. For the evaluation of the results, only the minimum achieved peak reduction should be regarded. 
+
+The underlying heat pump load profile is based on [1], a dataset of real-world water-to-water heat pump load profiles.
+
+[1] Schlemminger, M., Ohrdes, T., Schneider, E., & Knoop, M. (2022). Dataset on electrical single-family house and heat pump load profiles in Germany. Scientific Data, 9(1), 56.
